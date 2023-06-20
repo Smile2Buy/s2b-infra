@@ -1,0 +1,1 @@
+# Define ECR repository resources
