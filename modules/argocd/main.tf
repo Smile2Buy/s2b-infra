@@ -1,1 +1,0 @@
-# Define ArgoCD installation resources
