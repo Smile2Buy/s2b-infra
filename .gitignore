@@ -2,3 +2,5 @@
 .terraform*
 .idea/
 terraform.tfstate*
+**/provider.tf
+**/terraform.tf
