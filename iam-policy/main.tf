@@ -7,22 +7,7 @@ resource "aws_iam_policy" "ec2_full-access_policy" {
   name        = "ec2_full-access_policy"
   description = "Allows FullAccess for VPC management"
 
-  policy = <<EOF
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": [
-        "ec2:*"
-      ],
-      "Resource": [
-        "*"
-      ]
-    }
-  ]
-}
-EOF
+  policy = data.aws_iam_policy_document.ec2_full-access_policy.json
 }
 
 # Attach the policy to the current user
