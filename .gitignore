@@ -10,3 +10,6 @@
 
 # Crash log files
 crash.log
+
+# Plan binary files
+**/*plan
