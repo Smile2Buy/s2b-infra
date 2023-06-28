@@ -3,9 +3,9 @@ output "vpc_id" {
 }
 
 output "public_subnet_ids" {
-  value = module.public_subnet.*.id
+  value = values(module.public_subnet)[*].id
 }
 
 output "private_subnet_ids" {
-  value = module.private_subnet.*.id
+  value = values(module.private_subnet)[*].id
 }
