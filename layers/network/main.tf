@@ -24,4 +24,19 @@ module "public_subnet" {
     availability_zone = each.value.availability_zone
     tags              = {}
   }
+  route_table_config = {
+    name  = "${local.tag_name_prefix}-public"
+    route = {
+      cidr_block     = "0.0.0.0/0"
+      gateway_id     = aws_internet_gateway.main.id
+      nat_gateway_id = null
+    }
+  }
+}
+
+resource "aws_internet_gateway" "main" {
+  vpc_id = aws_vpc.main.id
+  tags   = {
+    Name = local.vpc_name
+  }
 }
