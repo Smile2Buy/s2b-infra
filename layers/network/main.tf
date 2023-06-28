@@ -3,6 +3,7 @@ locals {
   vpc_name        = local.tag_name_prefix
 }
 
+// 1-and-only enveloping vpc
 resource "aws_vpc" "main" {
   cidr_block           = var.config.vpc.cidr_block
   enable_dns_hostnames = true
@@ -12,6 +13,7 @@ resource "aws_vpc" "main" {
   }
 }
 
+// <--- Section for public subnet
 resource "aws_internet_gateway" "main" {
   vpc_id = aws_vpc.main.id
   tags   = {
@@ -40,7 +42,9 @@ module "public_subnet" {
     }
   }
 }
+// >--- Section for public subnet
 
+// <--- Section for private subnet
 resource "aws_eip" "main" {
   for_each = {for index, subnet in var.config.vpc.subnets : index => subnet}
 
@@ -61,3 +65,4 @@ resource "aws_nat_gateway" "main" {
     Name = "${local.tag_name_prefix}-ng-${each.value.availability_zone}"
   }
 }
+// >--- Section for private subnet
