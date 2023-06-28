@@ -11,3 +11,17 @@ resource "aws_vpc" "main" {
     Name = local.vpc_name
   }
 }
+
+module "public_subnet" {
+  source = "../../modules/subnet"
+
+  for_each = {for index, subnet in var.config.vpc.subnets : index => subnet}
+
+  vpc_id        = aws_vpc.main.id
+  subnet_config = {
+    name              = "${local.tag_name_prefix}-public-${each.value.availability_zone}"
+    cidr_block        = each.value.public_cidr_block
+    availability_zone = each.value.availability_zone
+    tags              = {}
+  }
+}
