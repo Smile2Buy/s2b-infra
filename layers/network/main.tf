@@ -65,4 +65,26 @@ resource "aws_nat_gateway" "main" {
     Name = "${local.tag_name_prefix}-ng-${each.value.availability_zone}"
   }
 }
+
+module "private_subnet" {
+  source = "../../modules/subnet"
+
+  for_each = {for index, subnet in var.config.vpc.subnets : index => subnet}
+
+  vpc_id        = aws_vpc.main.id
+  subnet_config = {
+    name              = "${local.tag_name_prefix}-private-${each.value.availability_zone}"
+    cidr_block        = each.value.public_cidr_block
+    availability_zone = each.value.availability_zone
+    tags              = {}
+  }
+  route_table_config = {
+    name  = "${local.tag_name_prefix}-private"
+    route = {
+      cidr_block     = "0.0.0.0/0"
+      gateway_id     = null
+      nat_gateway_id = aws_nat_gateway.main[each.key].id
+    }
+  }
+}
 // >--- Section for private subnet
