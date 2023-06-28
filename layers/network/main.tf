@@ -48,3 +48,16 @@ resource "aws_eip" "main" {
     Name = "${local.tag_name_prefix}-eip-${each.value.availability_zone}"
   }
 }
+
+resource "aws_nat_gateway" "main" {
+  for_each = {for index, subnet in var.config.vpc.subnets : index => subnet}
+
+  allocation_id = aws_eip.main[each.key].id
+  subnet_id     = module.public_subnet[each.key].id # using output of module
+
+  depends_on = [aws_internet_gateway.main]
+
+  tags = {
+    Name = "${local.tag_name_prefix}-ng-${each.value.availability_zone}"
+  }
+}
