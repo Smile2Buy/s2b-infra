@@ -10,4 +10,5 @@ variable "subnet_config" {
     availability_zone = string
     tags              = map(string)
   })
+  description = "Subnet configs that is compatible with public/private"
 }
