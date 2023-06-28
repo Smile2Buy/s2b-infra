@@ -6,8 +6,8 @@ locals {
       subnets = [
         {
           availability_zone  = "ap-northeast-2a"
-          public_cidr_block  = "10.0.101.0/16"
-          private_cidr_block = "10.0.1.0/16"
+          public_cidr_block  = "10.0.101.0/24"
+          private_cidr_block = "10.0.1.0/24"
         }
       ]
     }
