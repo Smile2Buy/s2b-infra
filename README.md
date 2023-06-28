@@ -10,4 +10,4 @@
 - [ ] ~~Setup IAM~~
 - [x] Setup VPC
 - [ ] Setup subnets
-    - [ ] Eks setting in subnets
+    - [ ] Add EKS-related tags to subnets
