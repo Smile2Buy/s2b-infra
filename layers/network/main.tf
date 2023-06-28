@@ -40,3 +40,11 @@ module "public_subnet" {
     }
   }
 }
+
+resource "aws_eip" "main" {
+  for_each = {for index, subnet in var.config.vpc.subnets : index => subnet}
+
+  tags = {
+    Name = "${local.tag_name_prefix}-eip-${each.value.availability_zone}"
+  }
+}
