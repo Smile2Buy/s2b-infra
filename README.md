@@ -8,6 +8,12 @@
 - [ ] ~~Setup ECR repository~~
 - [ ] ~~Setup ArgoCD installation~~
 - [ ] ~~Setup IAM~~
-- [x] Setup VPC
-- [ ] Setup subnets
+- Setup
+    - [x] VPC
+    - [x] public-subnet
+        - [x] internet-gateway
+        - [x] route-table & route-table-association
+    - [ ] private-subnet
+        - [ ] NAT gateway
+        - [ ] route-table & route-table-association
     - [ ] Add EKS-related tags to subnets
