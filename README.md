@@ -14,6 +14,8 @@
         - [x] internet-gateway
         - [x] route-table & route-table-association
     - [ ] private-subnet
-        - [ ] NAT gateway
+        - [x] NAT gateway
+        - [x] Elastic IP
         - [ ] route-table & route-table-association
     - [ ] Add EKS-related tags to subnets
+    - [ ] Security group setting
