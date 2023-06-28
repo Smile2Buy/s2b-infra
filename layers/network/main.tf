@@ -74,7 +74,7 @@ module "private_subnet" {
   vpc_id        = aws_vpc.main.id
   subnet_config = {
     name              = "${local.tag_name_prefix}-private-${each.value.availability_zone}"
-    cidr_block        = each.value.public_cidr_block
+    cidr_block        = each.value.private_cidr_block
     availability_zone = each.value.availability_zone
     tags              = {}
   }
