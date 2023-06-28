@@ -12,6 +12,13 @@ resource "aws_vpc" "main" {
   }
 }
 
+resource "aws_internet_gateway" "main" {
+  vpc_id = aws_vpc.main.id
+  tags   = {
+    Name = local.vpc_name
+  }
+}
+
 module "public_subnet" {
   source = "../../modules/subnet"
 
@@ -31,12 +38,5 @@ module "public_subnet" {
       gateway_id     = aws_internet_gateway.main.id
       nat_gateway_id = null
     }
-  }
-}
-
-resource "aws_internet_gateway" "main" {
-  vpc_id = aws_vpc.main.id
-  tags   = {
-    Name = local.vpc_name
   }
 }
