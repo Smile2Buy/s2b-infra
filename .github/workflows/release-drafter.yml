@@ -2,7 +2,7 @@ name: "Release Drafter"
 
 on:
   push:
-    branches: [ main ] # master 브랜치에 push되면 트리거
+    branches: [ main ] # master 브랜치에 push 되면 트리거
 
 permissions:
   contents: read # 릴리즈노트 빌드에 필요
@@ -11,7 +11,7 @@ jobs:
   update_release_draft: # [릴리즈노트 초안을 작성/갱신]
     permissions:
       contents: write # to create GitHub release
-      pull-requests: write # for AutoLabeler
+      pull-requests: write # for auto labeler
     runs-on: ubuntu-latest
     steps:
       - name: Release Drafter # 릴리즈노트를 작성/갱신한다.
