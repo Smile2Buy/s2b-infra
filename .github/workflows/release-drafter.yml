@@ -16,5 +16,5 @@ jobs:
     steps:
       - name: Release Drafter # 릴리즈노트를 작성/갱신한다.
         uses: release-drafter/release-drafter@v5
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
