@@ -1,0 +1,8 @@
+"@domain/environment":
+  - environments/*
+"@domain/layer":
+  - layers/*
+"@domain/module":
+  - modules/*
+"@type/gitops":
+  - .github/*

@@ -1,0 +1,39 @@
+name-template: 'v$RESOLVED_VERSION 🌈'
+tag-template: 'v$RESOLVED_VERSION'
+categories:
+  - title: '🚀 Features & Enhancements'
+    labels:
+      - '@domain/environment'
+      - '@domain/layer'
+      - '@domain/module'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - '@type/bug'
+      - '@type/hotfix'
+  - title: '☠️ Deprecations'
+    label: '@type/deprecation'
+  - title: '📖 Documentation'
+    label: '@type/docs'
+  - title: '🔧 Github-action changes'
+    label: '@type/gitops'
+  - title: '🧹 Housekeeping'
+    label: '@type/housekeeping'
+exclude-labels:
+  - 'skip-changelog'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+change-title-escapes: '\<*_&'
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+template: |
+  ## Change log
+
+  $CHANGES
