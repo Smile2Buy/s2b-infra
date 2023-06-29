@@ -1,0 +1,16 @@
+name: "Auto Labeler"
+
+on:
+  - pull_request_target # 이미 열려있는 PR에 대해
+
+jobs:
+  attach:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Labeler
+        uses: actions/labeler@v4
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
