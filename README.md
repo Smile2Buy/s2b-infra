@@ -19,6 +19,17 @@
         - [x] route-table & route-table-association
     - [ ] Add EKS-related tags to subnets
     - [ ] Security group setting
+- Setup (flat version)
+    - [x] VPC
+    - [x] Internet Gateway
+    - [x] Private/public Subnets
+    - [x] EIP & NAT Gateway
+    - [x] Route Tables & Associations
+
+## FIXME
+
+- [ ] Public IP allocation in EIP
+- [ ] Improve IAM strategies (currently using admin_policy by key-owner)
 
 ---
 
