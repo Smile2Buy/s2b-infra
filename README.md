@@ -4,10 +4,6 @@
 
 ## TODO
 
-- [ ] ~~Setup EKS cluster~~
-- [ ] ~~Setup ECR repository~~
-- [ ] ~~Setup ArgoCD installation~~
-- [ ] ~~Setup IAM~~
 - Setup
     - [x] VPC
     - [x] public-subnet
@@ -19,6 +15,7 @@
         - [x] route-table & route-table-association
     - [ ] Add EKS-related tags to subnets
     - [ ] Security group setting
+
 - Setup (flat version)
     - [x] VPC
     - [x] Internet Gateway
