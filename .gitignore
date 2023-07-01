@@ -13,3 +13,6 @@ crash.log
 
 # Plan binary files
 **/*plan
+
+# Ignore .DS_Store
+**/.DS_Store

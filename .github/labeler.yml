@@ -1,8 +1,12 @@
 "@domain/environment":
-  - environments/**
+  - nested/environments/**
 "@domain/layer":
-  - layers/**
+  - nested/layers/**
 "@domain/module":
-  - modules/**
+  - nested/modules/**
+"@domain/manual":
+  - flat/manual/**
+"@domain/modular":
+  - flat/modular/**
 "@type/gitops":
   - .github/**
