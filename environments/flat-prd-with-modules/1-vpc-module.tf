@@ -1,6 +1,6 @@
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "3.19.0"
+  version = "5.0.0"
 
   name = "main-module"
   cidr = "10.0.0.0/16"
@@ -16,13 +16,18 @@ module "vpc" {
   single_nat_gateway     = true
   one_nat_gateway_per_az = false
 
+  //TODO: to make our resources similar to the manual creation, then, comment-out!
+  #  manage_default_network_acl    = false
+  #  manage_default_route_table    = false
+  #  manage_default_security_group = false
+
   private_subnet_tags = {
-    "kubernetes.io/role/internal-elb" = 1 // private lb
+    "kubernetes.io/role/internal-elb" = 1
     "kubernetes.io/cluster/demo"      = "owned"
   }
 
   public_subnet_tags = {
-    "kubernetes.io/role/elb"     = 1 // public lb
+    "kubernetes.io/role/elb"     = 1
     "kubernetes.io/cluster/demo" = "owned"
   }
 }
