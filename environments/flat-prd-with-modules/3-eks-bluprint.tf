@@ -5,8 +5,8 @@ module "eks_blueprints" {
   cluster_version = "1.27"
   enable_irsa     = true // For holding the concept of "least privilege" in security
 
-  vpc_id              = module.vpc.vpc_id
-  private_subnet_ids  = module.vpc.private_subnets
+  vpc_id             = module.vpc.vpc_id
+  private_subnet_ids = module.vpc.private_subnets
   managed_node_groups = {
     role = {
       capacity_type   = "ON_DEMAND"
