@@ -1,9 +1,6 @@
-package com.mycompany.app;
-
-import software.constructs.Construct;
+package com.s2b.infra;
 
 import com.hashicorp.cdktf.App;
-import com.hashicorp.cdktf.TerraformStack;
 
 
 public class Main

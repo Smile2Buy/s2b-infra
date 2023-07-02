@@ -5,4 +5,4 @@
 - [x] Migrate Maven to Gradle
 - [x] Update Java Version from 1.8 to 17
 - [x] Set `cdktf.json` to run in Gradle
-- [ ] Swap App & Company Name of the Project
+- [x] Swap App & Company Name of the Project

@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.s2b.infra;
 
 import software.constructs.Construct;
 

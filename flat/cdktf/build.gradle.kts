@@ -25,7 +25,7 @@ dependencies {
     api("com.hashicorp:cdktf-provider-kubernetes:7.0.0")
 }
 
-group = "com.mycompany.app"
+group = "com.s2b.infra"
 version = "0.1"
 description = "cdktf"
 java.sourceCompatibility = JavaVersion.VERSION_17
@@ -37,7 +37,7 @@ java {
 }
 
 application {
-    mainClass.set("com.mycompany.app.Main")
+    mainClass.set("com.s2b.infra.Main")
 }
 
 tasks.withType<JavaCompile>() {
