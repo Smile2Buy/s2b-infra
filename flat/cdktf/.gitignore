@@ -8,5 +8,6 @@ cdktf.log
 .idea
 .settings
 .vscode
+.gradle
 *.iml
 target/
