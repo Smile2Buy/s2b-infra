@@ -27,7 +27,7 @@ dependencies {
 
 group = "com.s2b.infra"
 version = "0.1"
-description = "cdktf"
+description = "A simple getting started project for cdktf"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 java {
