@@ -4,6 +4,7 @@
 
 plugins {
     `java-library`
+    java
     application
 }
 
@@ -27,7 +28,13 @@ dependencies {
 group = "com.mycompany.app"
 version = "0.1"
 description = "cdktf"
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_17
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
 
 application {
     mainClass.set("com.mycompany.app.Main")
