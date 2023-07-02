@@ -4,6 +4,7 @@
 
 plugins {
     `java-library`
+    application
 }
 
 repositories {
@@ -27,6 +28,10 @@ group = "com.mycompany.app"
 version = "0.1"
 description = "cdktf"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
+
+application {
+    mainClass.set("com.mycompany.app.Main")
+}
 
 tasks.withType<JavaCompile>() {
     options.encoding = "UTF-8"
