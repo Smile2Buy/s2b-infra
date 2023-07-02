@@ -4,7 +4,6 @@
 
 plugins {
     `java-library`
-    `maven-publish`
 }
 
 repositories {
@@ -27,12 +26,6 @@ group = "com.mycompany.app"
 version = "0.1"
 description = "cdktf"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
-
-publishing {
-    publications.create<MavenPublication>("maven") {
-        from(components["java"])
-    }
-}
 
 tasks.withType<JavaCompile>() {
     options.encoding = "UTF-8"
