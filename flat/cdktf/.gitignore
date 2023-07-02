@@ -11,3 +11,4 @@ cdktf.log
 .gradle
 *.iml
 target/
+build
