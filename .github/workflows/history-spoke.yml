@@ -1,0 +1,17 @@
+name: Notify README0.md Update
+on:
+  push:
+    paths:
+      - 'README.md' # README.md가 수정된 경우 트리거
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository Dispatch
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.PAT }}
+        repository: Simle2Buy/.github # dest: Hub 브랜치
+        event-type: readme_updated    # 약속된 이벤트
+
