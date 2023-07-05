@@ -13,6 +13,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PAT }}
-          repository: Simle2Buy/.github # dest: Hub 브랜치
+          repository: Smile2Buy/.github # dest: Hub 브랜치
           event-type: readme_updated    # 약속된 이벤트
 

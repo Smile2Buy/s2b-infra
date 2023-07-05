@@ -30,6 +30,11 @@
     - [x] NAT Gateway & Elastic IP
     - [x] Route-table & Route-table-association
 
+### GitOps
+- [x] AutoLabel -- Attach labels of type and domain to the opened PR
+- [x] ReleaseDrafter -- Build a drafter of release note when code push to [main] branch occurs
+- [x] HistorySpoke -- Send message to Hisory-hub repository when README.md has been changed
+
 ### CDK Implementation
 
 ## FIXME
