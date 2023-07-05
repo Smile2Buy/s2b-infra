@@ -1,8 +1,9 @@
-name: Notify README0.md Update
+name: History Spoke
 on:
+  # README.md가 수정된 경우 트리거
   push:
     paths:
-      - 'README.md' # README.md가 수정된 경우 트리거
+      - 'README.md'
 
 jobs:
   notify:
@@ -12,6 +13,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.PAT }}
-        repository: Simle2Buy/.github # dest: Hub 브랜치
-        event-type: readme_updated    # 약속된 이벤트
+          repository: Simle2Buy/.github # dest: Hub 브랜치
+          event-type: readme_updated    # 약속된 이벤트
 
