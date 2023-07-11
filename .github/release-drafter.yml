@@ -10,14 +10,12 @@ categories:
     labels:
       - '@type/bug'
       - '@type/hotfix'
-  - title: '☠️ Deprecations'
-    label: '@type/deprecation'
   - title: '📖 Documentation'
     label: '@type/docs'
   - title: '🔧 Github-action changes'
     label: '@type/gitops'
-  - title: '🧹 Housekeeping'
-    label: '@type/housekeeping'
+  - title: '🧹 Chore'
+    label: '@type/chore'
 exclude-labels:
   - 'skip-changelog'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
