@@ -12,8 +12,6 @@
     - [x] Subnets
         - [x] Public Subnet; 1 AZ, Internet Gateway, Route-table & Route-table-association
         - [x] Private Subnet; 1 AZ, NAT Gateway & Elastic IP, Route-table & Route-table-association
-    - [ ] Attach EKS-related Tags to Subnets
-    - [ ] Security Group
 
 ### Flat Implementation
 - [x] Bootstrapped Basic Infra
@@ -21,6 +19,8 @@
     - [x] Subnets
         - [x] Public Subnet; 2 AZs, Internet Gateway, Route-table & Route-table-association
         - [x] Private Subnet; 2 AZs, NAT Gateway & Elastic IP, Route-table & Route-table-association
+    - [ ] Attach EKS-related Tags to Subnets
+    - [ ] Security Group
 
 ### GitOps
 - [x] AutoLabel -- Attach labels of type and domain to the opened PR
