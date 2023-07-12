@@ -5,6 +5,8 @@
 ## History
 
 ### CDKTF Implementation
+- [ ] Bootstrap Basic Infra by using CDKTF(Cloud Development Kit for TerraForm) in Java
+    - [ ] Initiate Cloud Development Kit for Terraform Directory
 
 ### Nested Implementation
 - [x] Bootstrapped Basic Infra
@@ -26,10 +28,6 @@
 - [x] AutoLabel -- Attach labels of type and domain to the opened PR
 - [x] ReleaseDrafter -- Build a drafter of release note when code push to [main] branch occurs
 - [x] HistorySpoke -- Send message to Hisory-hub repository when README.md has been changed
-
-## FIXME
-- [ ] Public IP allocation in EIP
-- [ ] Improve IAM strategies (currently using admin_policy by key-owner)
 
 ---
 
