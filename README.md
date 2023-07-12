@@ -4,21 +4,19 @@
 
 ## History
 
+### CDKTF Implementation
+
 ### Nested Implementation
-- [x] VPC
-- [x] Subnets
-  - [x] Public Subnet
-    - [x] Set 1 AZ
-    - [x] Internet Gateway
-    - [x] Route-table & Route-table-association
-  - [x] Private Subnet with 
-    - [x] Set 1 AZ
-    - [x] NAT Gateway & Elastic IP
-    - [x] Route-table & Route-table-association
-  - [ ] Attach EKS-related Tags to Subnets
-  - [ ] Security Group
+- [x] Bootstrapped Basic Infra
+    - [x] VPC
+    - [x] Subnets
+        - [x] Public Subnet; 1 AZ, Internet Gateway, Route-table & Route-table-association
+        - [x] Private Subnet; 1 AZ, NAT Gateway & Elastic IP, Route-table & Route-table-association
+    - [ ] Attach EKS-related Tags to Subnets
+    - [ ] Security Group
 
 ### Flat Implementation
+- [x] Bootstrapped Basic Infra
 - [x] VPC
 - [x] Subnets
   - [x] Public Subnet
@@ -34,8 +32,6 @@
 - [x] AutoLabel -- Attach labels of type and domain to the opened PR
 - [x] ReleaseDrafter -- Build a drafter of release note when code push to [main] branch occurs
 - [x] HistorySpoke -- Send message to Hisory-hub repository when README.md has been changed
-
-### CDK Implementation
 
 ## FIXME
 - [ ] Public IP allocation in EIP
