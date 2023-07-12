@@ -17,16 +17,10 @@
 
 ### Flat Implementation
 - [x] Bootstrapped Basic Infra
-- [x] VPC
-- [x] Subnets
-  - [x] Public Subnet
-    - [x] Set 2 AZs
-    - [x] Internet Gateway
-    - [x] Route-table & Route-table-association
-  - [x] Private Subnet -1az
-    - [x] Set 2 AZs
-    - [x] NAT Gateway & Elastic IP
-    - [x] Route-table & Route-table-association
+    - [x] VPC
+    - [x] Subnets
+        - [x] Public Subnet; 2 AZs, Internet Gateway, Route-table & Route-table-association
+        - [x] Private Subnet; 2 AZs, NAT Gateway & Elastic IP, Route-table & Route-table-association
 
 ### GitOps
 - [x] AutoLabel -- Attach labels of type and domain to the opened PR
