@@ -1,16 +1,12 @@
 package com.s2b.infra;
 
-import software.constructs.Construct;
-
 import com.hashicorp.cdktf.App;
-import com.hashicorp.cdktf.NamedCloudWorkspace;
 import com.hashicorp.cdktf.CloudBackend;
 import com.hashicorp.cdktf.CloudBackendConfig;
-import com.hashicorp.cdktf.TerraformStack;
+import com.hashicorp.cdktf.NamedCloudWorkspace;
 
 
-public class Main
-{
+public class Main {
     public static void main(String[] args) {
         final App app = new App();
         MainStack stack = new MainStack(app, "s2b-infra-simple");
