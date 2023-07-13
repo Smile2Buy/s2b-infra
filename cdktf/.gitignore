@@ -10,5 +10,4 @@ cdktf.log
 .vscode
 .gradle
 *.iml
-target/
 build
