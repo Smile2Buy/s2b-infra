@@ -1,7 +1,10 @@
 package com.s2b.infra;
 
-import com.hashicorp.cdktf.*;
-
+import com.hashicorp.cdktf.App;
+import com.hashicorp.cdktf.NamedRemoteWorkspace;
+import com.hashicorp.cdktf.RemoteBackend;
+import com.hashicorp.cdktf.RemoteBackendConfig;
+import com.hashicorp.cdktf.TerraformStack;
 
 public class Main {
     public static void main(String[] args) {
