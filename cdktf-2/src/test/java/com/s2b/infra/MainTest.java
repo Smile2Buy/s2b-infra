@@ -1,5 +1,5 @@
-import com.hashicorp.cdktf.Testing;
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 // The tests below are example tests, you can find more information at
