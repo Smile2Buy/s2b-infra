@@ -4,7 +4,10 @@ import com.hashicorp.cdktf.TerraformOutput;
 import com.hashicorp.cdktf.TerraformStack;
 import com.hashicorp.cdktf.providers.aws.instance.Instance;
 import com.hashicorp.cdktf.providers.aws.provider.AwsProvider;
+import com.hashicorp.cdktf.providers.aws.vpc.Vpc;
 import software.constructs.Construct;
+
+import java.util.Map;
 
 public class MainStack extends TerraformStack {
     public MainStack(final Construct scope, final String id) {
@@ -13,6 +16,13 @@ public class MainStack extends TerraformStack {
         // define resources here
         AwsProvider.Builder.create(this, "AWS")
                 .region("ap-northeast-2")
+                .build();
+
+        Vpc vpc = Vpc.Builder.create(this, "main")
+                .cidrBlock("10.0.0.0/16")
+                .enableDnsSupport(true)
+                .enableDnsHostnames(true)
+                .tags(Map.of("Name", "main"))
                 .build();
 
         Instance instance = Instance.Builder.create(this, "compute")
