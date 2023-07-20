@@ -13,3 +13,4 @@ cdktf.log
 build/
 
 cdktf.json
+.DS_Store
