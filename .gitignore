@@ -11,3 +11,5 @@ cdktf.log
 .gradle
 *.iml
 build/
+
+cdktf.json
