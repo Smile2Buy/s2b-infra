@@ -1,19 +1,21 @@
 package com.s2b.infra;
 
-import com.hashicorp.cdktf.TerraformOutput;
 import com.hashicorp.cdktf.TerraformStack;
-import com.hashicorp.cdktf.providers.aws.instance.Instance;
-import com.hashicorp.cdktf.providers.aws.provider.AwsProvider;
-import com.hashicorp.cdktf.providers.aws.vpc.Vpc;
 import software.constructs.Construct;
-
-import java.util.Map;
 
 public class MainStack extends TerraformStack {
     public MainStack(final Construct scope, final String id) {
         super(scope, id);
 
-        // define resources here
+//        // define resources here
+//        RandomProvider.Builder.create(this, "random")
+//                .build();
+//        Pet pet = Pet.Builder.create(this, "pet")
+//                .build();
+//        TerraformOutput.Builder.create(this, "pet_id")
+//                .value(pet.getId())
+//                .build();
+
 //        AwsProvider.Builder.create(this, "AWS")
 //                .region("ap-northeast-2")
 //                .build();
