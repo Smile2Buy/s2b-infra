@@ -12,5 +12,5 @@ cdktf.log
 *.iml
 build/
 
-cdktf.json
+# cdktf.json
 .DS_Store
