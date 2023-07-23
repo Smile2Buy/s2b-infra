@@ -1,0 +1,13 @@
+{
+  "version": "0.17.1",
+  "stacks": {
+    "stack-prd": {
+      "name": "stack-prd",
+      "constructPath": "stack-prd",
+      "workingDirectory": "stacks/stack-prd",
+      "synthesizedStackPath": "stacks/stack-prd/cdk.tf.json",
+      "annotations": [],
+      "dependencies": []
+    }
+  }
+}

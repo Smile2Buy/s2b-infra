@@ -1,0 +1,21 @@
+{
+  "//": {
+    "metadata": {
+      "backend": "cloud",
+      "cloud": "tfc",
+      "stackName": "stack-prd",
+      "version": "0.17.1"
+    },
+    "outputs": {
+    }
+  },
+  "terraform": {
+    "cloud": {
+      "hostname": "app.terraform.io",
+      "organization": "smile2buy",
+      "workspaces": {
+        "name": "s2b-infra-prd"
+      }
+    }
+  }
+}

@@ -18,7 +18,7 @@ dependencies {
     api("junit:junit:4.13.2")
     api("org.junit.jupiter:junit-jupiter:5.8.0")
 //    api("com.hashicorp:cdktf-provider-aws:16.0.1")
-    implementation("com.hashicorp:cdktf-provider-random:8.0.0")
+//    implementation("com.hashicorp:cdktf-provider-random:8.0.0")
 }
 
 group = "com.s2b.infra"
