@@ -1,6 +1,9 @@
-.terraform
-cdktf.log
-*terraform.*.tfstate*
+**/*.log
+**/cdktf.out
+**/.terraform
+**/*.tfstate*
+src/main/java/imports/
+src/main/resources/imports/
 
 .classpath
 .project
