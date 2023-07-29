@@ -13,11 +13,11 @@ repositories {
 }
 
 dependencies {
-    implementation("com.hashicorp:cdktf:0.17.1")
-    implementation("software.constructs:constructs:10.0.25")
-    implementation("junit:junit:4.13.2")
-    implementation("org.junit.jupiter:junit-jupiter:5.8.0")
-    implementation("com.hashicorp:cdktf-provider-aws:16.0.1")
+    api("com.hashicorp:cdktf:0.17.1")
+    api("software.constructs:constructs:10.0.25")
+    api("junit:junit:4.13.2")
+    api("org.junit.jupiter:junit-jupiter:5.8.0")
+    api("com.hashicorp:cdktf-provider-aws:16.0.1")
 }
 
 group = "com.s2b.infra"
