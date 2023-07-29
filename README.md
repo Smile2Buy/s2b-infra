@@ -5,24 +5,16 @@
 ## History
 
 ### CDKTF Implementation
-- [ ] Bootstrap Basic Infra by using CDKTF(Cloud Development Kit for TerraForm) in Java
-    - [ ] Initiate Cloud Development Kit for Terraform Directory
-
-### Nested Implementation
-- [x] Bootstrapped Basic Infra
-    - [x] VPC
-    - [x] Subnets
-        - [x] Public Subnet; 1 AZ, Internet Gateway, Route-table & Route-table-association
-        - [x] Private Subnet; 1 AZ, NAT Gateway & Elastic IP, Route-table & Route-table-association
-
-### Flat Implementation
-- [x] Bootstrapped Basic Infra
-    - [x] VPC
-    - [x] Subnets
-        - [x] Public Subnet; 2 AZs, Internet Gateway, Route-table & Route-table-association
-        - [x] Private Subnet; 2 AZs, NAT Gateway & Elastic IP, Route-table & Route-table-association
-    - [ ] Attach EKS-related Tags to Subnets
-    - [ ] Security Group
+- [X] Bootstrap CDK for Terraform Project
+    - [X] Inititate directory for cdktf
+    - [X] Migrate project to gradle 
+    - [X] Modify gradle configs
+    - [X] Configure node version via nvmrc
+    - [X] Set Terraform Cloud API token in local machine
+    - [X] Set Terraform Cloud as remote-backend
+    - [X] Initiate workspace in Terraform Cloud Web
+    - [X] Connect workspace with infra-repository
+    - [X] Complete the workflow
 
 ### GitOps
 - [x] AutoLabel -- Attach labels of type and domain to the opened PR
