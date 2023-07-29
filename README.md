@@ -21,7 +21,3 @@
 - [x] ReleaseDrafter -- Build a drafter of release note when code push to [main] branch occurs
 - [x] HistorySpoke -- Send message to Hisory-hub repository when README.md has been changed
 
----
-
-230629 04:24 architecture diagram
-![graph](https://github.com/Smile2Buy/s2b-infra/assets/28827932/6d6c1787-289f-4bf3-a888-79bdf9dabfce)
