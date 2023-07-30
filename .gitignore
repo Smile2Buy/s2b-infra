@@ -1,18 +1,18 @@
-# .terraform directories
-**/.terraform/**
+**/*.log
+**/cdktf.out
+**/.terraform
+**/*.tfstate*
+src/main/java/imports/
+src/main/resources/imports/
 
-# idea configs
-.idea/
+.classpath
+.project
+.idea
+.settings
+.vscode
+.gradle
+*.iml
+build/
 
-# .tfstate files
-*.tfstate
-*.tfstate.*
-
-# Crash log files
-crash.log
-
-# Plan binary files
-**/*plan
-
-# Ignore .DS_Store
+# cdktf.json
 **/.DS_Store
